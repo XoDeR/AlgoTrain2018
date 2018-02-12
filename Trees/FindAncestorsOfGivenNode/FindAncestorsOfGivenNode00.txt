@@ -1,0 +1,21 @@
+Given a binary tree, find all ancestors of given node in it.
+
+ 
+
+
+For example, consider below binary tree
+
+          1
+        /   \
+       /     \
+      2       3
+     / \     / \
+    4   5   6   7
+           /     \
+          8       9
+
+
+Ancestor of node 9 are 7, 3 and 1
+Ancestor of node 6 are 3 and 1
+Ancestor of node 5 are 2 and 1
+. . .

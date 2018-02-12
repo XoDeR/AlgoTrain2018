@@ -1,0 +1,5 @@
+Iterative solution
+
+The idea is to main a map to store parent node information of all nodes present in the tree. Then we do a iterative pre-order traversal of the tree, and set parent pointer of each node. Finally, we print ancestors of given key by using parent map.
+
+The time complexity of above solution is O(n) and auxiliary space used by the program is O(n).

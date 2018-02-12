@@ -1,0 +1,6 @@
+3. Recursive implementation using Preorder traversal –
+ 
+
+We can also solve this problem by using constant space and in linear time. The idea is to traverse the tree in preorder fashion and maintain maximum level visited so far. If current level is more than maximum level visited so far, then the current node is the first node of current level and we print it and also update last level to current level.
+
+The time complexity of above solution is O(n) and need O(h) extra space for the call stack where h is the height of the tree.

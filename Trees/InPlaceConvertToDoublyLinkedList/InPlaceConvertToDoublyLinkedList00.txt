@@ -1,0 +1,3 @@
+Given a binary tree, in-place convert it to a Doubly Linked List.
+
+The left and right pointers of binary tree nodes should act as previous and next pointers in doubly linked list and the doubly linked list nodes should follow the same order of nodes as in-order traversal of the tree.

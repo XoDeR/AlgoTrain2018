@@ -1,0 +1,5 @@
+Approach 3: (keeping track of previous processed node in in-order traversal)
+ 
+We can solve this problem in single traversal by doing in-order traversal only. The idea is to keep track of previous processed node in in-order traversal and for every encountered node, we set its left child to prev and prev’s right child to current node.
+
+The time complexity of above solution is O(n) and need O(h) extra space for the call stack where h is the height of the tree.

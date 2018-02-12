@@ -1,0 +1,5 @@
+Approach 1: (using in-order traversal)
+ 
+The idea is to do a in-order traversal of the tree and for every node encountered, we insert it in the beginning of DLL. Since we are inserting the nodes in beginning of the doubly linked list, we need to reverse the linked list so that it follows the same order of nodes as in-order traversal of the tree.
+
+The time complexity of above solution is O(n) and need O(h) extra space for the call stack where h is the height of the tree.

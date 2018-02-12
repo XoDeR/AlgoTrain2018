@@ -1,0 +1,7 @@
+But this approach requires two traversals of the input array. We can easily modify the main algorithm to handle negative integers as well.
+
+Output: 
+
+The sum of contiguous subarray with the largest sum is -2
+
+Because of the way this algorithm uses optimal substructures (the maximum subarray ending at each position is calculated in a simple way from a related but smaller and overlapping subproblem: the maximum subarray ending at the previous position) this algorithm can be viewed as a simple example of dynamic programming.

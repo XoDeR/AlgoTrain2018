@@ -1,0 +1,6 @@
+Approach 2: (using reverse in-order traversal)
+ 
+
+Above approach requires two passes – one pass for converting binary tree to DLL and one pass to reverse the DDL. We can solve this problem in one traversal of the tree by doing reverse in-order traversal instead of normal in-order traversal. In reverse in-order traversal, we process the right subtree before left subtree. Now, the nodes will follow the order of in-order traversal.
+
+The time complexity of above solution is O(n) and need O(h) extra space for the call stack where h is the height of the tree.

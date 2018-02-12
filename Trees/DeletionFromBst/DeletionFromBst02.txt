@@ -1,0 +1,3 @@
+Above solution initially search the key in the BST and also find its parent pointer. We can easily modify the code to recursively search the key in deletion procedure itself and let recursion take care of updating the parent pointer.
+
+The time complexity of above solution is O(n).

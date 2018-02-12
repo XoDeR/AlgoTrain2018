@@ -1,0 +1,5 @@
+Above code doesn’t handle the case when all elements of the array are negative. If the array contains all negative values, the answer is the maximum element. We can easily place this check before continuing to the algorithm. The implementation can be seen below
+
+Output: 
+
+The sum of contiguous sub-array with the largest sum is -2

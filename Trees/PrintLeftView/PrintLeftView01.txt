@@ -1,0 +1,6 @@
+1. Iterative implementation –
+ 
+
+In iterative version, we perform level order traversal of the tree. We can modify level order traversal to maintain nodes in current level. Then if current node is first node of current level, we print it.
+
+The time complexity of above solution is O(n) and auxiliary space used by the program is O(n).

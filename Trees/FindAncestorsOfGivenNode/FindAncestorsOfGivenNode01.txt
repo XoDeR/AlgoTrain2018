@@ -1,0 +1,3 @@
+The idea is to traverse the tree in postorder fashion and search for given node in the tree. If the node is found, we return true from the function. So for any node, if the given node is found in either its left subtree or its right subtree, then the current node is an ancestor of it.
+
+The time complexity of above solution is O(n) and need O(h) extra space for the call stack where h is the height of the tree.

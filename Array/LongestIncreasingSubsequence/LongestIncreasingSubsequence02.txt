@@ -1,0 +1,20 @@
+How to print LIS?
+
+To make things simpler, we can keep in the S, not the actual integers, but their indices in the set. That is we do not keep {1, 2, 4, 5, 8}, but keep {4, 5, 3, 7, 8} since arr[4] = 1, arr[5] = 2, arr[3] = 4, arr[7] = 5 and arr[8] = 8.
+
+To reconstruct the actual LIS we have to use a parent array. Let parent[i] be the predecessor of element with index i in the LIS ending at element with index i. If we update properly the parent array, the actual LIS is:
+
+    arr[S[lastElementOfS]],
+    arr[parent[S[lastElementOfS]]],
+    arr[parent[parent[S[lastElementOfS]]]],
+         ………………………………….
+ 
+
+Below solution stores both actual integers and their indices in the set for easier implementation
+
+Output: 
+
+LIS is 2 3 4 5 8
+
+ 
+The time complexity of above solution is O(nlog(n)) and auxiliary space used by the program is O(n).
