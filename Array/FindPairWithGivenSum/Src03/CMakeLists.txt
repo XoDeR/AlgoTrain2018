@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.8.2)
+set(SOURCES FindPairWithGivenSum03.cpp)
+add_executable(FindPairWithGivenSum03 ${SOURCES})
+source_group("Src" FILES ${SOURCES})
+target_include_directories(FindPairWithGivenSum03 PUBLIC ./)

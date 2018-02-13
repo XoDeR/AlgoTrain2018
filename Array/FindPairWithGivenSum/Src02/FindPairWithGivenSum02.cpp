@@ -1,11 +1,14 @@
 #include <iostream>
-#include <algorithm>
+#include <algorithm> // std::sort
+#include <vector>
 
-// Function to find a pair in an array with given sum using Sorting
-void findPair(int arr[], int n, int sum)
+// Sorting
+// Function to find a pair in an array with given sum using sorting
+void findPair(std::vector<int>& arr, int sum)
 {
+	int n = arr.size();
     // sort the array in ascending order
-    std::sort(arr, arr + n);
+    std::sort(arr.begin(), arr.end());
 
     // maintain two indices pointing to end-points of the array
     int low = 0;
@@ -22,25 +25,27 @@ void findPair(int arr[], int n, int sum)
             std::cout << "Pair found";
             return;
         }
-
-        // increment low index if total is less than the desired sum
-        // decrement high index is total is more than the sum
-        (arr[low] + arr[high] < sum)? low++: high--;
+		else if (arr[low] + arr[high] < sum)
+		{
+			// increment low index if total is less than the desired sum
+			++low;
+		}
+		else // arr[low] + arr[high] > sum
+		{
+			// decrement high index is total is more than the sum
+			--high;
+		}
     }
 
     // No pair with given sum exists in the array
     std::cout << "Pair not found";
 }
 
-// Find pair with given sum in the array
 int main()
 {
-    int arr[] = { 8, 7, 2, 5, 3, 1};
+	std::vector<int> arr = { 8, 7, 2, 5, 3, 1};
     int sum = 10;
-
-    int n = sizeof(arr)/sizeof(arr[0]);
-
-    findPair(arr, n, sum);
+    findPair(arr, sum);
 
     return 0;
 }
