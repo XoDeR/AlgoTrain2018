@@ -1,0 +1,9 @@
+Merge Sort Performance:
+ 
+Worst case time complexity of merge sort is O(nlog(n)). The recurrence relation is
+
+T(n) = 2T(n/2) + cn = O(nlog(n))
+
+The recurrence basically summaries merge sort algorithm – Sort two lists of half the size of the original list, and add the n steps taken to merge the resulting two lists.
+
+Auxiliary space required by it is O(n).
