@@ -1,0 +1,23 @@
+We can easily solve this problem using recursion. 
+The idea is to start from the top-left cell of the matrix and recuse for next node (immediate right or immediate bottom cell) 
+and keep on doing that for every visited cell till destination is reached. 
+We maintain a path array to store the nodes in current path and update the path array (include current node in it) whenever we visit any cell. 
+Whenever destination (bottom-right corner) is reached, we print the path array.
+
+Output: 
+
+1 – 2 – 3 – 6 – 9
+1 – 2 – 5 – 6 – 9
+1 – 2 – 5 – 8 – 9
+1 – 4 – 5 – 6 – 9
+1 – 4 – 5 – 8 – 9
+1 – 4 – 7 – 8 – 9
+
+Time complexity of above solution is exponential.
+
+T(M, N) = T(M, N-1) + T(N, M-1)	// for two recursive calls
+T(M, 1) = M, T(1, N) = N, T(1, 1) = 1
+
+Auxiliary space used by the program is O(M + N).
+
+If we carefully analyze the solution, we can see the problem has overlapping sub-problems. So it can be solved using Dynamic Programming and time complexity can be reduced drastically (space complexity will also increase drastically).
