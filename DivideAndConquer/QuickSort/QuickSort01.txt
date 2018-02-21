@@ -1,0 +1,17 @@
+Output:
+
+-6 -3 1 2 3 5 6 8 9
+ 
+
+Quicksort Performance:
+ 
+The worst case time complexity of Quicksort is O(n2). The worst case happens when the pivot happens to be the smallest or largest element in the list, or when all the elements of array are equal. This will result in most unbalanced partition as the pivot divides the array into two sub-array of sizes 0 and n – 1. If this happens repeatedly in every partition (example, we have sorted array), then each recursive call processes a list of size one less than the previous list and that will result in O(n²) time.
+
+T(n) = T(n-1) + cn = O(n²)
+
+(Note – partition takes O(n) time that accounts for cn)
+
+ 
+The best case time complexity of quicksort is O(nlog(n)). The best case happens when the pivot divides the array into two nearly equal pieces. Now each recursive call processes a list of half the size.
+
+T(n) = 2 T(n/2) + cn = O(n log(n))

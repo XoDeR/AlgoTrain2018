@@ -1,0 +1,8 @@
+Finding last occurrence of the element
+
+In order to find the last occurrence of the element, the idea is to modify the normal binary search in such a way that we do not stop the search as soon we find any occurrence of the target element. Instead we update the result to mid and go on searching towards right (towards higher indices) i.e. modify our search space by adjusting low to mid + 1 on finding the target at mid index.
+
+Last occurrence of element 5 is found at index 3
+
+The time complexity of above solutions is O(log(n)) and auxiliary space used by the program is O(1).
+

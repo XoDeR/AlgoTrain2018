@@ -1,0 +1,22 @@
+How can we perform better?
+ 
+The idea is to use divide and conquer to find the maximum subarray sum. The algorithm works as follows:
+
+- Divide the array into two equal subarrays.
+- Recursively calculate the maximum subarray sum for left subarray.
+- Recursively calculate the maximum subarray sum for right subarray.
+- Find the maximum subarray sum that crosses mid element.
+- Return the maximum of above three sums.
+
+Output:
+
+The maximum sum of the subarray is 11
+
+Maximum Sum Subarray Solution Performance
+ 
+The time complexity of above D&C solution is O(nlogn) as for given array of size n, we make two recursive calls on input size n/2 and finding maximum subarray that crosses midpoint takes O(n) time in worst case. So,
+
+    T(n) = 2T(n/2) + O(n)
+    T(n) = O(nlogn)
+ 
+We can also solve this problem in O(n) time using Kadane’s algorithm.

@@ -1,0 +1,6 @@
+Finding first occurrence of the element
+In normal binary search, we return as soon as we find any occurrence of the given target element in it. In order to find the first occurrence of the element, the idea is to modify the normal binary search in such a way that we do not stop the search as soon we find any occurrence of the target element. Instead we update the result to mid and go on searching towards left (towards lower indices) i.e. modify our search space by adjusting high to mid – 1 on finding the target at mid index.
+
+Output: 
+
+First occurrence of element 5 is found at index 1

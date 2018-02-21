@@ -1,0 +1,5 @@
+Naive solution would be to consider every possible subarray and find sum of all of them and take maximum. The problem with this approach is that its worst case time complexity is O(n2).
+
+Output:
+
+The maximum sum of the subarray is 11

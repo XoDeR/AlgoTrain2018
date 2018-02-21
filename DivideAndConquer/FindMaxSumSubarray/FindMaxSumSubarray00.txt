@@ -1,0 +1,7 @@
+Given an array of integers, find maximum sum subarray among all subarrays possible.
+
+For example,
+
+Input:  A[]= [2, -4, 1, 9, -6, 7, -3]
+
+Output:The maximum sum of the subarray is 11 [1, 9, -6, 7]
