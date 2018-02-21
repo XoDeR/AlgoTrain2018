@@ -1,6 +1,6 @@
-The longest increasing subsequence problem is to find a subsequence of a given sequence in which the subsequence’s elements are in sorted order, lowest to highest, and in which the subsequence is as long as possible. This subsequence is not necessarily contiguous, or unique.
-
- 
+The longest increasing subsequence problem is to find a subsequence of a given sequence in which the subsequence’s elements are in sorted order, 
+lowest to highest, and in which the subsequence is as long as possible. 
+This subsequence is not necessarily contiguous, or unique.
 
 For example, consider subsequence {0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15}
 
